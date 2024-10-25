@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+
+<div id="stopwatch-container">
+    <div id="stopwatch-frame" class="color-zone">
+        <div id="stopwatch">00:00:00:00:000</div>
+    </div>
+    <div id="controls">
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+        <button onclick="recordLap()">Lap</button>
+    </div>
+
+    <div id="lap-container">
+        <h2>Lap Times</h2>
+        <ul id="lap-list"></ul>
+        <p id="lap-counter">Laps: 0</p>
+        <p id="lap-time">Lap Time: 00:00:00:00:000</p>
+    </div>
+
+    <div class="color-picker-container">
+        <div class="color-picker-frame">
+            <input type="color" id="colorPicker" onchange="changeColorZone(this.value)">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
